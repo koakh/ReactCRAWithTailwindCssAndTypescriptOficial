@@ -1,24 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="m-4 p-4 rounded-lg bg-slate-200 border-2 border-slate-300">
+      <h1 className="text-2xl text-gray-700 font-bold uppercase">
+        React CRA 5.0 with Tailwind Css 3 and Typescript Official
+      </h1>
     </div>
   );
 }
