@@ -1,5 +1,3 @@
-import React from 'react';
-
 function App() {
   return (
     <div className="m-4 p-4 rounded-lg bg-slate-200 border-2 border-slate-300">
