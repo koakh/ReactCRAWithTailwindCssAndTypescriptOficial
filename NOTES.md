@@ -37,6 +37,8 @@ Install `tailwindcss` and its peer dependencies via npm, and then run the init c
 $ npm install -D tailwindcss postcss autoprefixer
 # generate tailwind and postcss config files
 $ npx tailwindcss init -p
+# generate full Config
+$ npx tailwindcss init --full tailwind.config-full.js
 ```
 
 ### Configure your template paths
