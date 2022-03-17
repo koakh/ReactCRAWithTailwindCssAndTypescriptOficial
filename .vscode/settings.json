@@ -8,6 +8,10 @@
     "_build/**": true
   },
   "cSpell.words": [
-    "tailwindcss"
+    "Bootstrapper",
+    "fullscreen",
+    "icns",
+    "tailwindcss",
+    "tauri"
   ]
 }
