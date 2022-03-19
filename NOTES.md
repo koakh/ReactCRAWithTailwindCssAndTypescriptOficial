@@ -9,6 +9,7 @@
     - [Add the Tailwind directives to your CSS](#add-the-tailwind-directives-to-your-css)
     - [Start your build process](#start-your-build-process)
     - [Start using Tailwind in your project](#start-using-tailwind-in-your-project)
+    - [To use in dev env we can use Watch](#to-use-in-dev-env-we-can-use-watch)
   - [Add Tauri](#add-tauri)
     - [Init Tauri](#init-tauri)
     - [Development Cycle](#development-cycle)
@@ -45,12 +46,14 @@ $ git commit -am "first commit"
 
 ## Install Tailwind CSS
 
+- [Tailwindcss.com installation](https://tailwindcss.com/docs/installation)
+
 Install `tailwindcss` and its peer dependencies via npm, and then run the init command to generate both `tailwind.config.js` and `postcss.config.js.`
 
 ```shell
-$ npm install -D tailwindcss postcss autoprefixer
+$ npm install -D tailwindcss
 # generate tailwind and postcss config files
-$ npx tailwindcss init -p
+$ npx tailwindcss init
 # generate full Config
 $ npx tailwindcss init --full tailwind.config-full.js
 ```
@@ -76,7 +79,7 @@ module.exports = {
 
 Add the `@tailwind` directives for each of Tailwind’s layers to your `./src/index.css` file.
 
-`src/index.css`
+`src/input.css`
 
 ```css
 @tailwind base;
@@ -108,6 +111,14 @@ function App() {
       Hello world!
     </h1>
   )  
+}
+```
+
+### To use in dev env we can use Watch
+
+```json
+"scripts": {
+  "tw:watch": "npx tailwindcss -i ./src/input.css -o ./src/index.css --watch"
 }
 ```
 
@@ -201,7 +212,7 @@ $ sudo zypper in libsoup2-devel
 use ubuntu machine for development
 
 ```shell
-sudo apt update && sudo apt install libwebkit2gtk-4.0-dev \
+$ sudo apt update && sudo apt install libwebkit2gtk-4.0-dev \
   build-essential \
   curl \
   wget \

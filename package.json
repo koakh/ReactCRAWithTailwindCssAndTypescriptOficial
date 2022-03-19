@@ -7,6 +7,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "tw:watch": "npx tailwindcss -i ./src/input.css -o ./src/index.css --watch",
     "tauri:dev": "cargo tauri dev",
     "tauri": "tauri",
     "bundle": "tauri build"
