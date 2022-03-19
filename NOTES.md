@@ -221,3 +221,5 @@ $ sudo apt update && sudo apt install libwebkit2gtk-4.0-dev \
   libappindicator3-dev \
   librsvg2-dev
 ```
+
+webkit2gtk-4.0
